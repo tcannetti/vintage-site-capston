@@ -1,8 +1,8 @@
 import React from 'react';
-import { AppBar, ToolBar, IconButton, Badge, Menu, MenuItem, Typography, Icon } from "@material-ui/core";
+import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography } from '@material-ui/core';
 import { ShoppingCart } from "@material-ui/icons"; 
 
-import logo from "../../assets/commerce.png";
+import logo from "../../assets/logo.png";
 import useStyles from './navStyles';
 
 const Navbar = () => {
@@ -11,10 +11,10 @@ const Navbar = () => {
   return (
     <>
       <AppBar position="fixed" className={classes.appBar} color="inherit">
-        <ToolBar>
+        <Toolbar>
           <Typography variant="h6" className={classes.title} color="inherit">
             <img src={logo} alt="Vintage Online Shop" height="25px" className={classes.image} />
-            Vintage Online Shop
+            Thrift Online
           </Typography>
           <div className={classes.grow}/>
           <div className={classes.button}>
@@ -24,7 +24,7 @@ const Navbar = () => {
               </Badge>
             </IconButton>
           </div>
-        </ToolBar>
+        </Toolbar>
       </AppBar>
     </>
   )
